@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- Main Wrapper Section -->
+  <section class="w-full site-wrapper font-sans">
+    <!-- Header -->
+    <header class="w-full bg-white site-header">
+      <nav class="max-w-7xl mx-auto py-4 flex items-center justify-between max-xl:px-8">
+        <div>
+          <button class="sm:block md:hidden hamburger-btn">
+            <img src="./images/hamburger.png" alt="" class="h-auto w-8 md:w-6" loading="lazy">
+          </button>
+          <ul class="hidden space-x-6 text-sm font-medium nav-links md:flex">
+            <li><a href="#" class="hover:text-blue-600 underline active:text-blue-600 capitalize">Home</a></li>
+            <li><a href="#" class="hover:text-blue-600 hover:underline capitalize">Product</a></li>
+            <li><a href="#" class="hover:text-blue-600 hover:underline capitalize">Categories</a></li>
+            <li><a href="#" class="text-red-600 font-bold uppercase">SALE</a></li>
+          </ul>
+        </div>
+
+        <div class="text-center logo-section">
+          <a href="">
+            <h1 class="text-xl font-medium">MEJIWOO</h1>
+            <p class="text-xl font-medium my-[2px]">미지우</p>
+          </a>
+        </div>
+
+        <div class="flex items-center space-x-4 header-icons">
+          <form action="#" class="hidden relative search-form md:block">
+            <input type="search" placeholder="Search"
+              class="bg-[#D9D9D9] h-8 border-0 rounded-2xl pl-4 pr-6 py-1 text-sm focus:outline-none" />
+            <button type="submit" class="absolute top-1/2 right-3 -translate-y-1/2">
+              <img src="./images/material-symbols_search.png" alt="search" loading="lazy" />
+            </button>
+          </form>
+          <img src="./images/cart-icon.png" alt="cart" class="cursor-pointer cart-icon" loading="lazy" />
+          <img src="./images/user-icon.png" alt="user" class="cursor-pointer user-icon" loading="lazy" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section with Logo Block -->
+    <div class="w-full bg-[#F7F6F0] py-8 sm:py-10 hero-section">
+      <div
+        class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-10 max-xl:px-8 hero-slider">
+        <div class="flex gap-5">
+          <div class="hero-image ">
+            <img src="./images//hero-img1.png" alt="" class="hero-image" loading="lazy" />
+          </div>
+          <div class="hero-image">
+            <img src="./images/hero-img2.png" alt="" class="hero-image" loading="lazy" />
+          </div>
+        </div>
+        <div class="text-center px-4 hero-center-text">
+          <h1 class="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">MEJIWOO</h1>
+          <p class="text-lg sm:text-2xl md:text-3xl font-medium">미지우</p>
+          <p class="text-xs sm:text-sm lg:text-lg text-gray-800 border-t-2 pt-2">
+            make your everyday look prettier
+            <span class="block">with MEJIWOO Korean Made</span>
+          </p>
+        </div>
+        <div class="flex gap-5">
+          <div class="hero-image">
+            <img src="./images/hero-img3.png" alt="" class="hero-image" loading="lazy" />
+          </div>
+          <div class="hero-image">
+            <img src="./images//hero-img4.png" alt="" class="hero-image" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Collections Section -->
+    <div class="w-full bg-white py-8 sm:py-10 max-xl:px-8 collections-section">
+      <h1 class="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+        Season Collections
+      </h1>
+      <div class="swiper max-w-7xl flex mx-auto items-center justify-between gap-6 relative collections-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex flex-col items-center justify-center text-center collection-item">
+            <img src="./images/collection-img1.png" alt="collection-img1" class="cursor-pointer mb-2" loading="lazy" />
+            <h3 class="uppercase text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold py-2">spring</h3>
+            <button type="submit"
+              class="h-10 w-18 sm:h-8 sm:w-24 md:h-10 md:w-26 lg:h-12 lg:w-30 bg-[#F7F6F0] rounded-2xl text-xs sm:text-sm md:text-base lg:text-lg uppercase cursor-pointer">
+              more
+            </button>
+          </div>
+          <div class="swiper-slide flex flex-col items-center justify-center text-center collection-item">
+            <img src="./images/collection-img2.png" alt="collection-img2" class="cursor-pointer mb-2" loading="lazy" />
+            <h3 class="uppercase text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold py-2">summer</h3>
+            <button type="submit"
+              class="h-10 w-18 sm:h-8 sm:w-24 md:h-10 md:w-26 lg:h-12 lg:w-30 bg-[#F7F6F0] rounded-2xl text-xs sm:text-sm md:text-base lg:text-lg uppercase cursor-pointer">
+              more
+            </button>
+          </div>
+          <div class="swiper-slide flex flex-col items-center justify-center text-center collection-item">
+            <img src="./images/collection-img3.png" alt="collection-img3" class="cursor-pointer mb-2" loading="lazy" />
+            <h3 class="uppercase text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold py-2">winter</h3>
+            <button type="submit"
+              class="h-10 w-18 sm:h-8 sm:w-24 md:h-10 md:w-26 lg:h-12 lg:w-30 bg-[#F7F6F0] rounded-2xl text-xs sm:text-sm md:text-base lg:text-lg uppercase cursor-pointer">
+              more
+            </button>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+
+    <!-- Best Sellers Section -->
+    <div class="w-full bg-white py-8 sm:py-10 max-xl:px-8 best-sellers-section">
+      <h1 class="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12">our
+        best sellers
+      </h1>
+      <div class="swiper max-w-7xl mx-auto flex items-center justify-between gap-6 relative best-sellers-slider ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex flex-col justify-center items-center best-sellers-item text-center">
+            <img src="./images/best-sellers-1.png" alt="" class="cursor-pointer mb-2" loading="lazy" />
+            <h5 class="product-title py-2 cursor-pointer text-[16px] capitalize">Euphoria Crop Blouse</h5>
+            <p class="product-price">Rs.125</p>
+          </div>
+          <div class="swiper-slide flex flex-col justify-center items-center best-sellers-item text-center">
+            <img src="./images/best-sellers-2.png" alt="" class="cursor-pointer mb-2" loading="lazy" />
+            <h5 class="product-title py-2 cursor-pointer text-[16px] capitalize">Snap Pure Blouse</h5>
+            <p class="product-price">Rs.150</p>
+          </div>
+          <div class="swiper-slide flex flex-col justify-center items-center best-sellers-item text-center">
+            <img src="./images/best-sellers-3.png" alt="" class="cursor-pointer mb-2" loading="lazy" />
+            <h5 class="product-title py-2 cursor-pointer text-[16px] capitalize">Venus Halter Dress</h5>
+            <p class="product-price">Rs.180</p>
+          </div>
+          <div class="swiper-slide flex flex-col justify-center items-center best-sellers-item text-center">
+            <img src="./images/best-sellers-4.png" alt="" class="cursor-pointer mb-2" loading="lazy" />
+            <h5 class="product-title py-2 cursor-pointer text-[16px] capitalize">West Bootscut Denim</h5>
+            <p class="product-price">Rs.300</p>
+          </div>
+          <div class="swiper-slide flex flex-col justify-center items-center best-sellers-item text-center">
+            <img src="./images/best-sellers-5.png" alt="" class="cursor-pointer mb-2" loading="lazy" />
+            <h5 class="product-title py-2 cursor-pointer text-[16px] capitalize">Ribbon Check Long</h5>
+            <p class="product-price">Rs.400</p>
+          </div>
+          <div class="swiper-slide flex flex-col justify-center items-center best-sellers-item text-center">
+            <img src="./images/best-sellers-6.png" alt="" class="cursor-pointer mb-2" loading="lazy" />
+            <h5 class="product-title py-2 cursor-pointer text-[16px] capitalize">Shouldcut Knit</h5>
+            <p class="product-price">Rs.340</p>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <!-- Discount Section -->
+    <div class="w-full bg-[#F7F6F0] py-8 sm:py-10 discount-section">
+      <div
+        class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10 max-xl:px-6 discount-content">
+        <div class="flex flex-col xs:flex-row gap-4 justify-center items-center w-full sm:w-auto">
+          <img src="./images/product-1.png" alt="product-1"
+            class="w-3/4 xs:w-1/2 sm:w-auto max-w-[140px] sm:max-w-[180px] h-auto discount-image" loading="lazy" />
+          <img src="./images/product-2.png" alt="product-2"
+            class="w-3/4 xs:w-1/2 sm:w-auto max-w-[140px] sm:max-w-[180px] h-auto discount-image" loading="lazy" />
+        </div>
+        <div class="flex flex-col items-center text-center px-2 sm:px-4 max-w-md w-full">
+          <h1 class="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 capitalize discount-heading">
+            Get 50% off
+          </h1>
+          <p class="text-sm sm:text-lg mb-5 sm:mb-6 discount-description leading-snug">
+            for all new product purchases<br />
+            min. purchase Rp. 350.000
+          </p>
+          <button type="submit"
+            class="h-11 inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-black text-white text-sm sm:text-base md:text-lg rounded-full hover:bg-gray-800 transition duration-200 capitalize">
+            shop now
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" class="w-4 h-4 sm:w-5 sm:h-5 fill-white">
+              <path d="M17.5 5.999l-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex justify-center w-full sm:w-auto">
+          <img src="./images/product-3.png" alt="product-3"
+            class="w-3/4 sm:w-auto max-w-[160px] sm:max-w-none h-auto discount-image" loading="lazy" />
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Our Products Section -->
+    <div class="w-full bg-white py-8 sm:py-10 our-product-section">
+      <div class="max-w-7xl mx-auto max-xl:px-8">
+        <h1 class="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+          Our Products</h1>
+        <div>
+          <div class="w-full overflow-x-auto ">
+            <ul
+              class="flex min-w-max items-center justify-start md:justify-center gap-4 sm:gap-6 md:gap-10 px-4 whitespace-nowrap">
+              <li>
+                <a href="#"
+                  class="block bg-[#F7F6F0] px-6 py-3 rounded-tl-2xl rounded-tr-2xl capitalize text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600">Top</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block hover:bg-[#F7F6F0] px-6 py-3 rounded-tl-2xl rounded-tr-2xl capitalize text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600">Bottom</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block hover:bg-[#F7F6F0] px-6 py-3 rounded-tl-2xl rounded-tr-2xl capitalize text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600">Dress</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block hover:bg-[#F7F6F0] px-6 py-3 rounded-tl-2xl rounded-tr-2xl capitalize text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600">Set</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block hover:bg-[#F7F6F0] px-6 py-3 rounded-tl-2xl rounded-tr-2xl capitalize text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600">Knit</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block hover:bg-[#F7F6F0] px-6 py-3 rounded-tl-2xl rounded-tr-2xl capitalize text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600">Outer</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-[#F7F6F0] rounded-2xl p-10 our-product-slider">
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+              <div class="flex flex-col items-center">
+                <img src="./images/our-product-img1.png" alt="our-product-img1" loading="lazy">
+                <h5 class="py-2 cursor-pointer text-[16px] capitalize our-product-title">Eto V Neck Yellow</h5>
+                <p class="product-price">Rs.130</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./images/our-product-img2.png" alt="our-product-img1" loading="lazy">
+                <h5 class="py-2 cursor-pointer text-[16px] capitalize our-product-title">Macaroon Dry Half</h5>
+                <p class="product-price">Rs.130</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./images/our-product-img3.png" alt="our-product-img1" loading="lazy">
+                <h5 class="py-2 cursor-pointer text-[16px] capitalize our-product-title">Wave Stripe Hally</h5>
+                <p class="product-price">Rs.130</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./images/our-product-img4.png" alt="our-product-img1" loading="lazy">
+                <h5 class="py-2 cursor-pointer text-[16px] capitalize our-product-title">Eve Punching Floral</h5>
+                <p class="product-price">Rs.130</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./images/our-product-img5.png" alt="our-product-img1" loading="lazy">
+                <h5 class="py-2 cursor-pointer text-[16px] capitalize our-product-title">Floral Waffle Tee</h5>
+                <p class="product-price">Rs.130</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./images/our-product-img6.png" alt="our-product-img1" loading="lazy">
+                <h5 class="py-2 cursor-pointer text-[16px] capitalize our-product-title">Snap Pure Blouse</h5>
+                <p class="product-price">Rs.130</p>
+              </div>
+            </div>
+            <div class="text-center mt-6">
+              <button type="submit"
+                class="inline-flex items-center gap-2 px-6 py-3 bg-black text-white text-sm sm:text-base md:text-lg rounded-full hover:bg-gray-800 transition duration-200">
+                See More
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" class="w-4 h-4 sm:w-5 sm:h-5 fill-white">
+                  <path d="M17.5 5.999l-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Collection Section -->
+    <div class="w-full bg-white py-8 sm:py-10 featured-collection-section">
+      <h1 class="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+        Our Featured Collections
+      </h1>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="flex flex-col gap-6">
+            <div class="relative">
+              <img src="./images/featured-collection-img1.png" alt="" loading="lazy"
+                class="featured-collection-img w-full object-cover rounded">
+              <div class="absolute bottom-3 left-3">
+                <h3 class="font-semibold uppercase text-xs md:text-lg lg:text-xl">
+                  <span>COLORFUL KNITWEAR</span><span class="block">SERIES</span>
+                </h3>
+              </div>
+              <div
+                class="bg-[#F7F6F0] w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 grid place-items-center absolute rounded-tl-xl bottom-0 right-0">
+                <img src="./images/Group.png" alt="Icon" class="w-4 h-4 sm:w-8 sm:h-8 md:w-10 md:h-10 object-contain" />
+              </div>
+            </div>
+            <div class="relative">
+              <img src="./images/featured-collection-img2.png" alt="" loading="lazy"
+                class="featured-collection-img w-full object-cover rounded">
+              <div class="absolute bottom-3 left-3">
+                <h3 class="font-semibold uppercase text-xs md:text-lg lg:text-xl">
+                  <span>TOP PANTS</span><span class="block">SERIES</span>
+                </h3>
+              </div>
+              <div
+                class="bg-[#F7F6F0] w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 grid place-items-center absolute rounded-tl-xl bottom-0 right-0">
+                <img src="./images/Group.png" alt="Icon" class="w-4 h-4 sm:w-8 sm:h-8 md:w-10 md:h-10 object-contain" />
+              </div>
+            </div>
+          </div>
+          <div class="relative col-span-1 sm:col-span-1 lg:col-span-1">
+            <img src="./images/featured-collection-img3.png" alt="" loading="lazy"
+              class="featured-collection-img w-full h-full object-cover rounded">
+            <div class="absolute bottom-3 left-3">
+              <h3 class="font-semibold uppercase text-xs md:text-lg lg:text-xl">
+                <span>JIWOO MADE SPECIAL</span><span class="block">SERIES</span>
+              </h3>
+            </div>
+            <div
+              class="bg-[#F7F6F0] w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 grid place-items-center absolute rounded-tl-xl bottom-0 right-0">
+              <img src="./images/Group.png" alt="Icon" class="w-4 h-4 sm:w-8 sm:h-8 md:w-10 md:h-10 object-contain" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-6">
+            <div class="relative">
+              <img src="./images/featured-collection-img4.png" alt="" loading="lazy"
+                class="featured-collection-img w-full object-cover rounded">
+              <div class="absolute bottom-3 left-3">
+                <h3 class="font-semibold uppercase text-xs md:text-lg lg:text-xl">
+                  <span>FRESHIDER TOP</span><span class="block">SERIES</span>
+                </h3>
+              </div>
+              <div
+                class="bg-[#F7F6F0] w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 grid place-items-center absolute rounded-tl-xl bottom-0 right-0">
+                <img src="./images/Group.png" alt="Icon" class="w-4 h-4 sm:w-8 sm:h-8 md:w-10 md:h-10 object-contain" />
+              </div>
+            </div>
+            <div class="relative">
+              <img src="./images/featured-collection-img5.png" alt="" loading="lazy"
+                class="featured-collection-img w-full object-cover rounded">
+              <div class="absolute bottom-3 left-3">
+                <h3 class="font-semibold uppercase text-xs md:text-lg lg:text-xl">
+                  <span>SWEET DRESSES</span><span class="block">SERIES</span>
+                </h3>
+              </div>
+              <div
+                class="bg-[#F7F6F0] w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 grid place-items-center absolute rounded-tl-xl bottom-0 right-0">
+                <img src="./images/Group.png" alt="Icon" class="w-4 h-4 sm:w-8 sm:h-8 md:w-10 md:h-10 object-contain" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Testimonial section -->
+    <div id="testimonial-section" class="w-full bg-white py-8 sm:py-10">
+      <h1 class="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12">What
+        They Said</h1>
+      <div class="swiper max-w-7xl mx-auto flex gap-6 justify-between max-sm:flex-wrap max-xl:px-8">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonial-card bg-[#F7F6F0] sm:max-w-[397px] w-full rounded-xl" id="testimonial-1">
+            <div class="testimonial-image-wrapper grid place-items-center p-4 sm:p-6 md:p-8 lg:p-10">
+              <img src="./images/testimonial-img1.png" alt="Lisa wearing denim" class="testimonial-image">
+            </div>
+            <div class="flex flex-col gap-1 sm:gap-2 md:gap-3">
+              <h3
+                class="text-sm sm:text-md md:text-lg lg:text-xl text-center px-4 sm:px-6 md:px-8 lg:px-10 font-semibold">
+                Essence Long Denim
+              </h3>
+              <ul class="flex items-center justify-center" aria-label="5 star rating">
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+              </ul>
+              <p class="text-center font-medium">Lisa</p>
+              <p id="review-lisa"
+                class="testimonial-review text-justify px-4 pb-4 sm:px-6 sm:pb-6 md:px-8 md:pb-8 lg:px-10 lg:pb-10 text-sm md:text-base lg:text-lg leading-relaxed max-w-prose mx-auto text-gray-800">
+                “I like this pants. Its fit and perfect for me. The material is so comfortable that it can be used
+                anywhere.
+                It is also suitable to be combined with all types of my clothes.”
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-card bg-[#F7F6F0] sm:max-w-[397px] w-full rounded-xl" id="testimonial-1">
+            <div class="testimonial-image-wrapper grid place-items-center p-4 sm:p-6 md:p-8 lg:p-10">
+              <img src="./images/testimonial-img2.png" alt="Lisa wearing denim" class="testimonial-image">
+            </div>
+            <div class="flex flex-col gap-1 sm:gap-2 md:gap-3">
+              <h3
+                class="text-sm sm:text-md md:text-lg lg:text-xl text-center px-4 sm:px-6 md:px-8 lg:px-10 font-semibold">
+                Essence Long Denim
+              </h3>
+              <ul class="flex items-center justify-center" aria-label="5 star rating">
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+              </ul>
+              <p class="text-center font-medium">Lisa</p>
+              <p id="review-lisa"
+                class="testimonial-review text-justify px-4 pb-4 sm:px-6 sm:pb-6 md:px-8 md:pb-8 lg:px-10 lg:pb-10 text-sm md:text-base lg:text-lg leading-relaxed max-w-prose mx-auto text-gray-800">
+                “I like this pants. Its fit and perfect for me. The material is so comfortable that it can be used
+                anywhere.
+                It is also suitable to be combined with all types of my clothes.”
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-card bg-[#F7F6F0] sm:max-w-[397px] w-full rounded-xl" id="testimonial-1">
+            <div class="testimonial-image-wrapper grid place-items-center p-4 sm:p-6 md:p-8 lg:p-10">
+              <img src="./images/testimonial-img3.png" alt="Lisa wearing denim" class="testimonial-image">
+            </div>
+            <div class="flex flex-col gap-1 sm:gap-2 md:gap-3">
+              <h3
+                class="text-sm sm:text-md md:text-lg lg:text-xl text-center px-4 sm:px-6 md:px-8 lg:px-10 font-semibold">
+                Essence Long Denim
+              </h3>
+              <ul class="flex items-center justify-center" aria-label="5 star rating">
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+                <li><img src="./images/rating-star.png" alt="Star"></li>
+              </ul>
+              <p class="text-center font-medium">Lisa</p>
+              <p id="review-lisa"
+                class="testimonial-review text-justify px-4 pb-4 sm:px-6 sm:pb-6 md:px-8 md:pb-8 lg:px-10 lg:pb-10 text-sm md:text-base lg:text-lg leading-relaxed max-w-prose mx-auto text-gray-800">
+                “I like this pants. Its fit and perfect for me. The material is so comfortable that it can be used
+                anywhere.
+                It is also suitable to be combined with all types of my clothes.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./custom.js"></script>
+</body>
+
+</html>
